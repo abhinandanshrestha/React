@@ -1,0 +1,13 @@
+1) Install node
+2) npx create-react-app <projectName>
+3) npm run start
+
+If node modules project is not present then:
+->  npm Install
+
+// Running Json server
+
+npx json-server --watch data/db.json --port 8000
+
+
+I'm at tutorial 23

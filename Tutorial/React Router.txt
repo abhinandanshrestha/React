@@ -1,0 +1,28 @@
+React Router
+
+1. npm install react-router-dom@5
+2. import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+3. Home.js looks like
+
+import Navbar from './Navbar';
+import Home from './Home';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
+function App() {
+  return (
+    <Router>
+    <div className="App">
+      <Navbar />
+      <div className="content">
+        <Switch>
+          <Route path="/">
+            <Home />
+          </Route> 
+        </Switch>
+      </div>
+    </div>
+    </Router>
+  );
+}
+
+export default App;
